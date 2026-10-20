@@ -443,7 +443,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
         
         {/* Background Layer */}
         <div className="absolute inset-0 z-0 bg-[#1A1A1A]">
-          <img src="/hero-bg.jpg" alt="Pretty Parkway Frisco" className="w-full h-full object-cover object-center opacity-75 sepia-[0.1]" />
+          <video src="/v1hero.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover object-center opacity-70 sepia-[0.2]" />
           <div className="absolute inset-0 bg-black/30 z-10"></div>
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_0%,_rgba(0,0,0,0.6)_100%)] z-10 opacity-90 pointer-events-none"></div>
         </div>
@@ -1110,7 +1110,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
         <section id="academy" className="relative w-full py-24 md:py-48 flex flex-col items-center justify-center overflow-hidden z-30 shadow-[0_-30px_60px_rgba(0,0,0,0.8)] bg-[#050505] md:rounded-t-[4rem] md:-mt-32">
             
             <div className="absolute inset-0 w-full h-full opacity-30">
-               <img src="/academy-bg.jpg" alt="Pretty Parkway Speakeasy Suite" className="w-full h-full object-cover object-center scale-105 opacity-60 sepia-[0.2]" />
+               <video src="/academy-bg.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover object-center scale-105 sepia-[0.3]" />
             </div>
             <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/95 via-[#050505]/70 to-[#050505]/95 z-0"></div>
 
