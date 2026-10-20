@@ -6,7 +6,7 @@ import { motion, useScroll, useTransform, AnimatePresence, useInView } from 'fra
 
 // STRICTLY TYPED TRANSLATION DICTIONARY
 const enContent = {
-  fomoText: "NOW ACCEPTING SELECT CLIENTS IN FRISCO, TX · THE SPEAKEASY SUITES",
+  fomoText: "NOW ACCEPTING SELECT CLIENTS IN FRISCO, TX",
   navServices: "Services", navPortfolio: "Transformations", navAcademy: "Academy & Suites", navContact: "Contact", book: "BOOK NOW",
   
   heroEst: "FRISCO, TX · SUNSET PARKWAY", heroHeadline: "PRETTY PARKWAY", heroEd2: "PURPOSE-DRIVEN ARTISTRY",
@@ -98,7 +98,7 @@ const enContent = {
 };
 
 const esContent: typeof enContent = {
-  fomoText: "AHORA ACEPTANDO CLIENTES SELECTOS EN ALBUQUERQUE, NM",
+  fomoText: "AHORA ACEPTANDO CLIENTES SELECTOS EN FRISCO, TX",
   navServices: "Servicios", navPortfolio: "Galería", navAcademy: "Membresías", navContact: "Contacto", book: "RESERVAR AHORA",
   
   heroEst: "ALBUQUERQUE, NM", heroHeadline: "SKIN & SOUL", heroEd2: "NATURALMENTE LUJOSO",
@@ -359,7 +359,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
     <div className="bg-[#FAFAFA] text-[#2A2A2A] font-sans antialiased selection:bg-[#D4C4A8] selection:text-[#2A2A2A] overflow-x-hidden relative min-h-screen flex flex-col">
       
       {/* FOMO HOOK BANNER */}
-      <div className="w-full bg-[#D4C4A8] text-[#1A1A1A] py-2.5 text-center text-[8px] md:text-[9px] uppercase tracking-[0.3em] font-bold z-[60] relative">
+      <div className="w-full bg-[#D4C4A8] text-[#1A1A1A] py-3.5 px-4 text-center text-[9px] sm:text-[10px] md:text-[11px] uppercase tracking-[0.18em] font-semibold z-[60] relative border-b border-black/5">
         {content.fomoText}
       </div>
 
@@ -370,7 +370,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
         className={`fixed z-50 left-1/2 -translate-x-1/2 transition-all duration-500 ease-in-out flex items-center justify-between
           ${scrolled 
             ? 'top-4 w-[92%] md:w-[95%] max-w-[1200px] bg-white/90 backdrop-blur-2xl border border-[#EAE6DF] px-5 lg:px-8 py-3 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.05)]' 
-            : 'top-6 lg:top-10 w-full px-6 lg:px-12 py-4 bg-transparent border-transparent rounded-none'}`}
+            : 'top-12 lg:top-14 w-full px-6 lg:px-12 py-4 bg-transparent border-transparent rounded-none'}`}
       >
         <div className="lg:hidden flex items-center flex-1">
           <button onClick={() => setIsMobileMenuOpen(true)} className={`focus:outline-none transition-colors duration-300 ${scrolled ? 'text-[#2A2A2A]' : 'text-white'}`}>
@@ -443,7 +443,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
         
         {/* Background Layer */}
         <div className="absolute inset-0 z-0 bg-[#1A1A1A]">
-          <video src="/v1hero.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover object-center opacity-70 sepia-[0.2]" />
+          <img src="/hero-bg.jpg" alt="Pretty Parkway Frisco" className="w-full h-full object-cover object-center opacity-75 sepia-[0.1]" />
           <div className="absolute inset-0 bg-black/30 z-10"></div>
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_0%,_rgba(0,0,0,0.6)_100%)] z-10 opacity-90 pointer-events-none"></div>
         </div>
@@ -1110,7 +1110,7 @@ function PageContent({ initialLang }: { initialLang: 'EN' | 'ES' }) {
         <section id="academy" className="relative w-full py-24 md:py-48 flex flex-col items-center justify-center overflow-hidden z-30 shadow-[0_-30px_60px_rgba(0,0,0,0.8)] bg-[#050505] md:rounded-t-[4rem] md:-mt-32">
             
             <div className="absolute inset-0 w-full h-full opacity-30">
-               <video src="/academy-bg.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover object-center scale-105 sepia-[0.3]" />
+               <img src="/academy-bg.jpg" alt="Pretty Parkway Speakeasy Suite" className="w-full h-full object-cover object-center scale-105 opacity-60 sepia-[0.2]" />
             </div>
             <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/95 via-[#050505]/70 to-[#050505]/95 z-0"></div>
 
